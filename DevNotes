@@ -1,0 +1,8 @@
+- I don't think the Enum module is actually used anywhere
+- I think the class-based type is a bit overkill in this context, and more prone to error.
+- I think it would be preferable to define the type of player (e.g. human vs ai) at the configuration level, for the
+  sake of reproducibility. We can keep setting via parameters but preferably as an 'overriding' option for testing. In
+  fact, I've used environmental variables in the same way in the past under this kind of scheme.
+- I have converted all constants in the config file to uppercase
+- I have removed the 'path' variable - it will be substituted with PKGROOT etc in all the right places.
+- I have separated the pygame-interfacing functions into a separate pygameMediator module

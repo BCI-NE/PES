@@ -1,0 +1,77 @@
+[ 2023-01-25 18:41:38.787157+00:00 ]: eventMarker: Initialising BIOSEMIUSB interface
+[ 2023-01-25 18:41:39.671995+00:00 ]: pygameMediator: Resolution set to: 2560x1440
+[ 2023-01-25 18:41:39.787547+00:00 ]: pygameMediator: Waiting for player to proceed ... [ 2023-01-25 18:41:43.805596+00:00 ]: [Done]
+[ 2023-01-25 18:46:47.174506+00:00 ]:  - Player 001 -- ('172.16.6.68', 8521) <-- active player
+
+
+-- Initialisation parameters --
+
+PKG_ROOT: /home/rodrigo/BARI/sources/PES
+CONFIG_FILE: /home/rodrigo/BARI/sources/PES/config/CONFIG.py
+AGGREGATION_METHOD: confidence_weighted_mean (Suggested: confidence_weighted_median)
+AVAILABLE_RESOURCES_PER_SEQUENCE: 39 (Suggested: 49)
+AVATAR_ICONS_SET: PlaceholderAvatars
+CITY_RADIUS_REFLECTS_SEVERITY: False
+COLORS: {0: (245, 243, 243), 1: (237, 230, 230), 2: (231, 215, 215), 3: (227, 198, 198), 4: (224, 180, 180), 5: (224, 137, 137), 6: (227, 113, 113), 7: (231, 88, 88), 8: (237, 60, 60), 9: (245, 31, 31), 10: (255, 0, 0)}
+CONFIDENCE_TIMEOUT: 5000
+CONFIDENCE_UPDATE_AMOUNT: 0.05
+DEBUG: False
+DEBUG_RESOLUTION: (962, 920) (Suggested: (762, 720))
+DETECT_USER_RESOLUTION: True
+DISPLAY_FEEDBACK: True
+FALLBACK_RESOLUTION: (1143, 1080)
+FEEDBACK_SHOW_COMBINED_ALLOCATIONS: False
+FORCE_MOUSEWHEEL_SCROLL_CONFIDENCE: True (Suggested: False)
+INIT_NO_OF_CITIES: 2
+INPUTS_PATH: /home/rodrigo/BARI/sources/PES/inputs
+LIVE_EXPERIMENT: True
+LOBBY_PLAYERS: 2 (Suggested: 4)
+LOBBY_TIMEOUT: 300
+MAX_ALLOCATABLE_RESOURCES: 10
+MAX_INIT_RESOURCES: 6
+MAX_INIT_SEVERITY: 5
+MIN_ALLOCATABLE_RESOURCES: 0
+MIN_INIT_RESOURCES: 3
+MIN_INIT_SEVERITY: 2
+MOVEMENT_REFRESH_RATE: 1 (Suggested: 7)
+NUM_ATTEMPTS_TO_ASSIGN_SEQ: 8
+NUM_BLOCKS: 8
+NUM_MAX_TRIALS: 10
+NUM_MIN_TRIALS: 3
+NUM_PREDEFINED_CITY_COORDS: 25
+NUM_SEQUENCES: 8
+OUTPUT_FILE_PREFIX: PES_full_
+OUTPUTS_PATH: /home/rodrigo/BARI/sources/PES/outputs
+PLAYER_TYPE: human
+PLAYBACK_ID: N/A
+RANDOM_INITIAL_SEVERITY: False
+RESPONSE_TIMEOUT: 10000
+RESPONSE_MULTIPLIER: 0.4 (Suggested: 0.2)
+SAVE_INITIAL_SEVERITY_TO_FILE: False
+SAVE_RESULTS: True
+SEVERITY_MULTIPLIER: 1.4 (Suggested: 1.2)
+SHOW_PYGAME_IF_NONHUMAN_PLAYER: False
+STARTING_BLOCK_INDEX: 0
+STARTING_SEQ_INDEX: 0
+TOTAL_NUM_TRIALS_IN_BLOCK: 45
+USE_FIXED_BLOCK_SEQUENCES: True
+VERBOSE: True
+BIOSEMI_CONNECTED: False
+SEQ_LENGTHS_FILE: sequence_lengths.csv
+INITIAL_SEVERITY_FILE: initial_severity.csv
+
+
+-- Parameters derived at runtime --
+
+Date: 2023-01-25 18:50:02.048082+00:00
+SubjectId: 001
+[ 2023-01-25 18:50:05.363187+00:00 ]: Current session (i.e. block): 1 of 8
+[ 2023-01-25 18:50:05.363260+00:00 ]: eventMarker: Sending 'Block Start' trigger
+[ 2023-01-25 18:50:05.363327+00:00 ]: Time elapsed: 0 minutes --  
+[ 2023-01-25 18:50:05.375527+00:00 ]: pygameMediator: Waiting for player to proceed ... [ 2023-01-25 18:50:06.694374+00:00 ]: [Done]
+[ 2023-01-25 18:50:07.693987+00:00 ]:
+[ 2023-01-25 18:50:07.694209+00:00 ]: Current sequence: 1 of 64 (1 of 8 in block), using map No. 2
+[ 2023-01-25 18:50:07.711433+00:00 ]: pygameMediator: Waiting for player to proceed ... [ 2023-01-25 18:50:10.704399+00:00 ]: [Done]
+[ 2023-01-25 18:50:10.704464+00:00 ]: Received 'ExitGame' event. Gracefully exiting ... 
+[ 2023-01-25 18:50:10.704527+00:00 ]:
+[ 2023-01-25 18:50:10.704561+00:00 ]: --- Experiment interrupted at BlockIndex=0, SequenceIndex=0 ---

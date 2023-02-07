@@ -1,0 +1,32 @@
+Processed and Summarized Data for Experiment 3D
+-----------------------------------------------
+
+1. First run 'FixData.py /home/common/Data/001_CM/ 001'.  This will pick the information for the subject in the specified directory and it will create two new files in /home/common/ready/ subject_responses.txt and subject_triggers.txt with the responses for the subject and their event triggers.  All this information is extraxcted from the log files of each experiment.
+2. The files for the agents responses (their responses will be appended to each subject_responsees file) end in '_TEST.txt'
+3. The files ending in numbers (001.txt, 003.txt) with odd numbers correspond to files with the responses of each subject.
+4. Trails located in files with bigger number are prioritized.  For instance if THE same trialid is found in 001.txt and in 003.txt, the one in 003.txt is kept while the other is discarded).
+5. This complete all the trials that are found on the given files.
+6. Run 'check_bdf_events.py' with python 2.7 (cv environment).  This will extract the markers using BCI-Mouse software from the $HOME directory.
+7. Run 'arrangeMarkers.py' with python 3.  This program picks the markers from NNN_triggers.txt (extracted from the log files) and merge them with the markers that were extracted from the BDF file.  The merging perform some consistency checks and if everything is Ok the merger output is generated into the file '_NNN_triggers.txt'.
+
+Following you can find all the files from this directory.
+
+Subject			No of Trials		BDF Neural Data file	Missing trial id		Bad channels
+-----------------------------------------------------------------------------------------------------------------------------
+001_DB			360			005.bdf							Resp, P1,T7,P5
+002_CP			 38			009_experiment.bdf					FC5,CP3,P3,EXG4, Resp
+003_CT			365			003_experiment.bdf					Resp
+004_MR			x			004_experiment.bdf					T7, TP7
+005_CK			292			006_experiment.bdf					Resp, EXG2
+006_ML			368			005_experiment.bdf					Resp
+007_CM			360			002_experiment.bdf					Resp
+008_GS			370			005_experiment.bdf		77			Resp	
+009_JF			363			002_experiment.bdf		324-328			Resp
+010_KA			365			002_experiment.bdf					Resp
+011_AA			362			003_experiment.bdf		248			Resp
+
+Missing trial ids:
+-----------------
+During the experiment for some subjects, some trials are missing.  This means that a whole trial is missing from the files.  We do not know why this happened or even how.  Those are the ones marked in that column for each subject.
+Additionally, some trials had not had an EndOfTrial mark.  For those cases, the marker for end of trial is identified as zero (0).
+

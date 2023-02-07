@@ -1,0 +1,9 @@
+v1.0.0: - Packaged the whole module.
+------
+v0.0.2: - Fixing corrections running with neurophysiological devices.
+------
+v0.0.1: - Extracted practice run from main into its own module
+        - Fixed minor bugs (e.g. img to img[0] in pygameMediator)
+------
+v0.0.0: - Created initial package structure, converted from previous pes.py file.
+------
