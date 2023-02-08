@@ -72,11 +72,14 @@ The package has the following structure:
     └── tests   : Unit tests.
        
 
-       
-
 # Disclaimer
 
 This provided source code and platform was created at the University of Essex as part of UK MOD sponsored research.  It is released
 for informational purposes only.  The contents and products of this source code should not be interpreted as representing the views
 of the UK MOD, nor should it be assumed that they reflect any current or future UK MOD policy.
+
+# Acknowledgement
+
+This research was supported by the Defence Science and Technoogy Laboratory (Dstl) on behalf of the UK Ministry of Defence (MOD) via
+funding from US/UK DoD Bilateral Academic Research Initiative (BARI).
 
