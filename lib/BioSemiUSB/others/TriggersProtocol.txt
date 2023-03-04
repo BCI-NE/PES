@@ -1,0 +1,96 @@
+The quickest way to access the triggers is to use the erpdataset class.
+To get access to the triggers from external softawre, e.g. Matlab, Excel, ...,
+the best way is to create txt files with the triggers using the following
+
+# to extract labels from bdf and put them in a text file, from the folder with the datasets:
+for f in $(ls *_*.bdf); do python /_space_/_SVN_/BCI-Mouse/sources/processing/averaging/LabelsOfBDFs.py $f > ${f%bdf}txt ; done
+
+
+Having said that, below I'll try to explain the low level format.
+
+
+
+
+The 16 bits of the trigger are used as follows:
+bits 0..7 -> data
+bit 8 (value 256 or 0x0100) -> DV: data valid
+bit 9 (value 512 or 0x0200) -> TM: time mark
+bits 10..15 -> ignored
+
+When a trigger is sent via USB, almost immediately,
+there is a spike in the TM bit lasting one or two
+samples. This is useful tho know WHEN something
+happened but gives no information about what
+happened.
+
+When the USB scheduler decides to send the
+full data (the WHAT part), the DV bit goes high
+and the eight data bits assume, for each sample,
+the state high/low needed to send the
+corresponding byte.
+
+The data has a one-byte header that gives a
+rough information about the type of trigger.
+This header byte has the MSB set (i.e. its value
+is >= 128) and it is the only byte in the data allowed
+to have this bit set. All the following bytes should be
+plain ASCII (<= 127). This is important because
+if, for some reason, two data streams are sent
+one after each other by the USB scheduler, you
+need to know when he second one starts.
+
+The one-byte header is also useful because it can
+give "full information" about an event making the
+following text information useful but not absolutely
+necessary (this is true if you have less than 32
+different types of events).
+
+CTL = 128 # first possible stimulus
+CTLe = 128 + 64 # last+1 possible stimulus (target)
+TRG = 32 # target flag
+
+If the first byte is 128, it means the trigger event #0
+happened and was not target. If it is 162, it means
+the event #2 happened and was target.
+
+In case of a Donchin speller, for example, you could
+have triggers made like
+128+"ABCDEF"
+129+"GHIJKL"
+130+...
+138+...
+139+...
+for each row and column, plus TRG (32) for the
+target row/column.
+This means that to know what letters flahed you can
+either use the header looking for values in the trigger
+CTL <= port < CTLe
+OR the text with the letters in the following bytes.
+
+SOR = 128 + 64 # start of run
+EOR = 128 + 64 + 1 # end of run
+UNK = 128 + 64 + 31 # unknown / unspecified chunk of data
+
+If the header byte has the bit 6 high (64), it means it
+is not a real trigger but rather some other form of
+information. If it is SOR/EOR it means this is a start/end
+of run and should be used by bdfextr to extract runs
+from the recordings.
+If it is UNK it means it is just some additional piece
+of information such as the number of targets counted.
+
+The text following the header byte should, as said,
+be <= 127, i.e. ASCII text.
+There should be no offset, and "A" should be 65
+and "M" 77.
+
+Except for the first part of a file where there can be
+spurious TMs (because of the initialization of the USB),
+each TM (lasting 1 or 2 samples) should be
+followed by exactly one header byte (i.e. >= 512+128).
+In 99.99% of cases, if you avoid sending two triggers in
+a row (I always left a few tenths of ms at least), you should
+be able to assign to each TM the first chunk of data
+following it.
+
+I think this is pretty much it.

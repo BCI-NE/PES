@@ -1,0 +1,326 @@
+EESchema Schematic File Version 1
+LIBS:./BioSemiUSB
+EELAYER 23  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "21 aug 2008"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 9300 5050 0    60   ~
+VCC
+Wire Wire Line
+	2450 1150 8600 1150
+Connection ~ 2400 3600
+Wire Wire Line
+	2400 3400 2400 5950
+Wire Wire Line
+	2400 3000 2400 2850
+Connection ~ 2650 3600
+Wire Wire Line
+	2400 3600 2650 3600
+Wire Wire Line
+	9200 2250 9250 2250
+Wire Wire Line
+	9250 2250 9250 5850
+Wire Wire Line
+	9250 5850 9550 5850
+Wire Wire Line
+	9550 4650 7650 4650
+Wire Wire Line
+	7650 3050 4200 3050
+Wire Wire Line
+	8000 2550 7450 2550
+Connection ~ 7650 3050
+Wire Wire Line
+	7650 4650 7650 2450
+Wire Wire Line
+	7650 2450 8000 2450
+Connection ~ 7750 2150
+Connection ~ 7750 1150
+Connection ~ 7850 3250
+Connection ~ 7850 1950
+Wire Wire Line
+	8000 1950 7850 1950
+Connection ~ 5500 2250
+Wire Wire Line
+	5500 1750 5500 2250
+Wire Wire Line
+	2450 1150 2450 2000
+Wire Wire Line
+	8600 1150 8600 1350
+Wire Wire Line
+	3500 4850 3500 2700
+Wire Wire Line
+	3500 2700 2450 2700
+Wire Wire Line
+	2450 2700 2450 2500
+Wire Wire Line
+	3600 4850 3600 4550
+Wire Wire Line
+	3600 4550 7450 4550
+Wire Wire Line
+	7450 4550 7450 5350
+Wire Wire Line
+	7450 5350 9550 5350
+Wire Wire Line
+	4400 5750 5950 5750
+Wire Wire Line
+	5950 5750 5950 4850
+Wire Wire Line
+	5950 4850 9550 4850
+Wire Wire Line
+	4400 6050 6150 6050
+Wire Wire Line
+	6150 6050 6150 5150
+Wire Wire Line
+	6150 5150 9550 5150
+Wire Wire Line
+	4400 5650 6350 5650
+Wire Wire Line
+	6350 5650 6350 5450
+Wire Wire Line
+	6350 5450 9550 5450
+Wire Wire Line
+	4400 5850 6450 5850
+Wire Wire Line
+	6450 5850 6450 5650
+Wire Wire Line
+	6450 5650 9550 5650
+Connection ~ 5500 1750
+Wire Wire Line
+	7050 1750 3000 1750
+Wire Wire Line
+	7050 1750 7050 5750
+Wire Wire Line
+	7050 5750 9550 5750
+Connection ~ 1800 2250
+Wire Wire Line
+	1800 2250 1650 2250
+Wire Wire Line
+	1650 2250 1650 6150
+Wire Wire Line
+	1650 6150 2600 6150
+Wire Wire Line
+	1950 2350 1800 2350
+Wire Wire Line
+	1800 2350 1800 2150
+Wire Wire Line
+	1800 2150 1950 2150
+Wire Wire Line
+	3000 1750 3000 2050
+Wire Wire Line
+	3000 2050 3150 2050
+Wire Wire Line
+	4150 2150 4350 2150
+Wire Wire Line
+	2950 2250 3150 2250
+Wire Wire Line
+	5650 2450 5500 2450
+Wire Wire Line
+	5500 2450 5500 2650
+Wire Wire Line
+	4350 2350 4200 2350
+Wire Wire Line
+	2400 5950 2600 5950
+Wire Wire Line
+	2400 2850 6850 2850
+Wire Wire Line
+	6850 2850 6850 2350
+Wire Wire Line
+	6850 2350 6650 2350
+Wire Wire Line
+	4400 5550 9550 5550
+Wire Wire Line
+	9550 5250 6250 5250
+Wire Wire Line
+	6250 5250 6250 5450
+Wire Wire Line
+	6250 5450 4400 5450
+Wire Wire Line
+	9550 4950 6050 4950
+Wire Wire Line
+	6050 4950 6050 5950
+Wire Wire Line
+	6050 5950 4400 5950
+Wire Wire Line
+	9550 4750 5850 4750
+Wire Wire Line
+	5850 4750 5850 6150
+Wire Wire Line
+	5850 6150 4400 6150
+Wire Wire Line
+	8600 3050 8600 3250
+Connection ~ 3500 3250
+Wire Wire Line
+	5350 2250 5650 2250
+Wire Wire Line
+	7850 1850 8000 1850
+Wire Wire Line
+	7850 2050 8000 2050
+Connection ~ 7850 2050
+Wire Wire Line
+	8000 1750 7850 1750
+Wire Wire Line
+	7850 1750 7850 3250
+Connection ~ 7850 1850
+Wire Wire Line
+	7750 2150 8000 2150
+Wire Wire Line
+	7750 2250 8000 2250
+Wire Wire Line
+	7750 2650 8000 2650
+Connection ~ 7750 2250
+Wire Wire Line
+	4200 2350 4200 3050
+Wire Wire Line
+	5500 2650 4200 2650
+Connection ~ 4200 2650
+Wire Wire Line
+	2600 6050 2200 6050
+Wire Wire Line
+	8600 3250 3500 3250
+Wire Wire Line
+	7450 2550 7450 4400
+Wire Wire Line
+	7450 4400 2200 4400
+Wire Wire Line
+	2200 4400 2200 6050
+Connection ~ 2650 2850
+Wire Wire Line
+	2650 3700 2650 3500
+Wire Wire Line
+	2650 4100 2650 4200
+Wire Wire Line
+	2650 4200 3500 4200
+Connection ~ 3500 4200
+Wire Wire Line
+	2650 3000 2650 2850
+Wire Wire Line
+	9550 5050 7750 5050
+Wire Wire Line
+	7750 5050 7750 1150
+Connection ~ 7750 2650
+Text Notes 7600 7550 0    60   ~
+BioSemi USB Triggers
+$Comp
+L C C1
+U 1 1 48EC7F70
+P 2650 3900
+F 0 "C1" H 2700 4000 50  0000 L C
+F 1 "1nF" H 2700 3800 50  0000 L C
+	1    2650 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 48EC7F5E
+P 2400 3200
+F 0 "D1" H 2400 3300 40  0000 C C
+F 1 "1N4148" H 2400 3100 40  0000 C C
+	1    2400 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 48EC7F11
+P 2650 3250
+F 0 "R1" V 2730 3250 50  0000 C C
+F 1 "150" V 2650 3250 50  0000 C C
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+Text Label 9350 4650 0    60   ~
+CK
+Text Label 9350 4750 0    60   ~
+D0
+Text Label 9350 4850 0    60   ~
+D4
+Text Label 9350 4950 0    60   ~
+D2
+Text Label 9350 5150 0    60   ~
+D1
+Text Label 9350 5250 0    60   ~
+D7
+Text Label 9300 5350 0    60   ~
+GND
+Text Label 9350 5450 0    60   ~
+D5
+Text Label 9350 5550 0    60   ~
+D6
+Text Label 9350 5650 0    60   ~
+D3
+Text Label 9350 5750 0    60   ~
+DV
+Text Label 9350 5850 0    60   ~
+TM
+$Comp
+L 74LS00 U2
+U 1 1 48ADA3A1
+P 6200 2350
+F 0 "U2" H 6200 2400 60  0000 C C
+F 1 "74LS00" H 6200 2300 60  0000 C C
+	1    6200 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L 74LS96 U3
+U 1 1 48ADA594
+P 8600 2200
+F 0 "U3" H 8750 2800 60  0000 C C
+F 1 "74LS96" H 8850 1600 60  0000 C C
+	1    8600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS00 U2
+U 4 1 48ADA3AE
+P 4900 2250
+F 0 "U2" H 4900 2300 60  0000 C C
+F 1 "74LS00" H 4900 2200 60  0000 C C
+	4    4900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS00 U2
+U 3 1 48ADA3AC
+P 3700 2150
+F 0 "U2" H 3700 2200 60  0000 C C
+F 1 "74LS00" H 3700 2100 60  0000 C C
+	3    3700 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L 74LS00 U2
+U 2 1 48ADA3A9
+P 2500 2250
+F 0 "U2" H 2500 2300 60  0000 C C
+F 1 "74LS00" H 2500 2200 60  0000 C C
+	2    2500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_20 P1
+U 1 1 48ADA348
+P 9900 4900
+F 0 "P1" V 9850 4900 60  0000 C C
+F 1 "CONN_20" V 9950 4900 60  0000 C C
+	1    9900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L UM245R U1
+U 1 1 48ADA2FC
+P 3500 5850
+F 0 "U1" H 3500 5750 60  0000 C C
+F 1 "UM245R" H 3500 5950 60  0000 C C
+	1    3500 5850
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

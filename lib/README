@@ -1,0 +1,4 @@
+This folder contains any external libraries that are required to be packaged with the project (e.g. dependencies that
+are typically not dealt with using pypi, whether these are stray python modules, or relate to other languages that will
+be interfaced with in the main source code)
+
