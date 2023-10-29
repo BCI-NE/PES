@@ -36,9 +36,10 @@ without unzipping, simply add the zipfile to your PYTHONPATH first. E.g.
     export PYTHONPATH="PES.zip"
     python3 -m PES
 
-You can run in parallel, in the same computer or a in the same network segment, other teammate instances:
+You can run in parallel, in the same computer or in the same network segment, other teammate instances.
+The type of 'game' can be specified by passing an appropriate config, e.g.:
 
-    python3 -m PES --config config/alt/CONFIG_AI.py 
+    python3 -m PES --config config/alt/CONFIG_AI.py
 
 
 Unit Tests can be run by typing:
@@ -57,7 +58,7 @@ to configure the experiment to be run as appropriate.
 
 # Files
 
-The package has the following structure:   
+The package has the following structure:
 
     PES/
     ├── analysis: Scripts to perform basic analysis of the results.
@@ -70,7 +71,7 @@ The package has the following structure:
     ├── res     : Media resources.
     ├── src     : Source code
     └── tests   : Unit tests.
-       
+
 
 # Disclaimer
 
@@ -83,3 +84,6 @@ of the UK MOD, nor should it be assumed that they reflect any current or future 
 This research was supported by the Defence Science and Technoogy Laboratory (Dstl) on behalf of the UK Ministry of Defence (MOD) via
 funding from US/UK DoD Bilateral Academic Research Initiative (BARI).
 
+# See also:
+
+* An open dataset of EEG data in .bdf format, which was generated using the PES in the context of the BARI project. Available at https://doi.org/10.18112/openneuro.ds004477.v1.0.1
